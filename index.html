@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-cel" id="menu">
+          <a href="">Inicio <span></span></a>
+          <a href="">Nosotros <span></span></a>
+          <a href="">Contacto <span></span></a>
+          <a href="">Cotizacion <span></span></a>
+          <a href="" data-bs-toggle="modal" data-bs-target="#modal-casillero">Crear Casillero <span></span></a>
+          <a href="" data-bs-toggle="modal" data-bs-target="#modal-prealerta">Pre-Alerta <span></span></a>
+          <a href="" data-bs-toggle="modal" data-bs-target="#modal-rastreo">Rastreo <span></span></a>
+        </div>
+        <nav>
+            <img src="./img/image_mayaboxhn.png" alt="mayaserv">
+            <div class="menu">
+              <h1>Menu</h1>
+              <button id="button"><ion-icon name="menu-outline"></ion-icon></button>
+            </div>
+            <div class="nav">
+                <a href="">Inicio <span></span></a>
+                <a href="">Nosotros <span></span></a>
+                <a href="">Contacto <span></span></a>
+                <a href="">Cotizacion <span></span></a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#modal-casillero">Crear Casillero <span></span></a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#modal-prealerta">Pre-Alerta <span></span></a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#modal-rastreo">Rastreo <span></span></a>
+            </div>
+        </nav>
+        <div class="modal fade rastreo" id="modal-rastreo" tab-index="-1">
+            <div class="modal-dialog">
+              <div class="modal-content bg-primary">
+                <div class="modal-header">
+                  <h5>Rastreo de Paquete</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success">Rastraer</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Cerrar">Cerrar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade casillero" id="modal-casillero" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content bg-primary">
+                <div class="modal-header justify-content-center">
+                  <h5 class="modal-title text-light" id="exampleModalLabel">Crear Casillero</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"> <ion-icon name="close-outline"></ion-icon></button>
+                </div>
+                <div class="modal-body">
+                  <h3 class="text-center text-light mb-3">Formulario</h3>
+                  <form>
+                    <div class="input-control p-3">
+                      <span class="input-group-text text-light bg-dark" for="primer_nombre">Primer Nombre</span>
+                      <input class="form-control mb-3" type="text" name="pnombre" id="primer_nombre"
+                        placeholder="Escribir primer nombre">
+                      <span class="input-group-text text-light bg-dark" for="primer_segundo">Segundo Nombre</span>
+                      <input class="form-control mb-3" type="text" name="sgnombre" id="segundo_nombre"
+                        placeholder="Escriba segundo nombre">
+                      <span class="input-group-text text-light bg-dark" for="primer_apellido">Primer Apellido</span>
+                      <input class="form-control mb-3" type="text" name="papellido" id="primer_apellido"
+                        placeholder="Escriba primer apellido">
+                      <span class="input-group-text text-light bg-dark" for="segundo_apellido">Segundo Apellido</span>
+                      <input class="form-control mb-3" type="text" name="sgapellido" id="segundo_apellido"
+                        placeholder="Escriba segundo apellido">
+                      <span class="input-group-text text-light bg-dark" for="telefono">Telefono</span>
+                      <input class="form-control mb-3" type="tel" name="tel" id="telefono" placeholder="Ejem. 99112233">
+                      <span class="input-group-text text-light bg-dark" for="correo">Correo
+                        electrónico</span>
+                      <input class="form-control mb-3" type="email" name="email" id="correo"
+                        placeholder="Ejem. correo@electronico.com">
+                      <span class="input-group-text text-light bg-dark" for="direccion">Dirección</span>
+                      <input class="form-control mb-3" type="text" name="dir" id="direccion" placeholder="Ejem. Col. Alameda, Zona 1, bloque
+                          ff, casa 1122">
+                      <span class="input-group-text text-light bg-dark" for="departamento">Departamento</span>
+                      <select class="form-control form-select mb-3" id="departamento">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">Atlántida</option>
+                        <option value="2">Colón</option>
+                        <option value="3">Comayagua</option>
+                        <option value="4">Copán</option>
+                        <option value="5">Cortés</option>
+                        <option value="6">Choluteca</option>
+                        <option value="7">El Paraíso</option>
+                        <option value="8">Francisco Morazán</option>
+                        <option value="9">Gracias a Dios</option>
+                        <option value="10">Intibucá</option>
+                        <option value="11">Islas de la Bahía</option>
+                        <option value="12">La Paz</option>
+                        <option value="13">Lempira</option>
+                        <option value="14">Ocotepeque</option>
+                        <option value="15">Olancho</option>
+                        <option value="16">Santa Bárbara</option>
+                        <option value="17">Valle</option>
+                        <option value="18">Yoro</option>
+                      </select>
+                      <span class="municipio input-group-text text-light bg-dark" for="municipio">Municipio</span>
+                      <input class="form-control" name="mun" id="municipio" placeholder="Ninguno" disabled>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success">Crear</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Cerrar">Cerrar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="slider-frame">
+          <div>
+            <h1>MAYABOX</h1>
+            <h1>SERVICIO DE PAQUETERIA</h1>
+            <div class="click" translate="no"><ion-icon name="caret-down-outline"></ion-icon></div>
+          </div>
+        </div>
+        <div class="mision">
+          <div>
+            <div>
+              <p class="h1 text-white">Misión</p>
+              <p class="h3 text-white">Texto relacionado con la Mision</p>
+            </div>
+            <div>
+              <p class="h1 text-white">Visión</p>
+              <p class="h3 text-white">Texto relacionado con la vision</p>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+          <h2 class="text-center mb-5">CONTACTANOS</h2>
+          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <div class="mb-3">
+              <label class="form-label text-white" for="name">Nombre</label>
+              <input class="form-control" id="name" type="text" placeholder="Escribir su nombre" data-sb-validations="required" />
+              <div class="invalid-feedback" data-sb-feedback="name:required">Es necesario escribir su nombre.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-white" for="emailAddress">Correo Electronico</label>
+              <input class="form-control" id="emailAddress" type="email" placeholder="Escribir su correo electronico" data-sb-validations="required, email" />
+              <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Es necesario escribir su correo electronico.</div>
+              <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Siga el formato de correo electronico ejemplo: trump@gmail.com.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-white" for="message">Mensaje</label>
+              <textarea class="form-control" id="message" type="text" placeholder="Escriba su mensaje" data-sb-validations="required"></textarea>
+              <div class="invalid-feedback" data-sb-feedback="message:required">Es necesario escribir su mensaje.</div>
+            </div>
+            <div class="d-none" id="submitSuccessMessage">
+              <div class="text-center mb-3 text-white">Mensaje enviado correctamente!</div>
+            </div>
+            <div class="d-none" id="submitErrorMessage">
+              <div class="text-center text-danger mb-3">Hubo un problema al enviar el mensaje!</div>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Contactar</button>
+            </div>
+          </form>
+        </div>
+        <footer class="text-center text-lg-start text-white">
+          <section class="section1 p-4 bg-primary">
+            <span>VISITANOS EN NUESTRAS REDES SOCIALES:</span>
+            <div>
+              <a href="" class="text-white me-4"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="" class="text-white me-1"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+          </section>
+          <section class="section2">
+            <div class="row mt-3">
+              <div>
+                <h4>MAYABOX</h4>
+                <div></div>
+                <p>Aqui va algun texto</p>
+              </div>
+              <div>
+                <h4>Servicios de la compañia</h4>
+                <div></div>
+                <p>Aqui va algun texto</p>
+              </div>
+              <div>
+                <h4>Contactar</h4>
+                <div></div>
+                <p><ion-icon name="home-outline"></ion-icon> San Pedro Sula, cortes,Honduras</p>
+                <p><ion-icon name="mail-outline"></ion-icon> mario@correo.com</p>
+                <p><ion-icon name="call-outline"></ion-icon> +504 8761-5817</p>
+                <!--<p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>-->
+              </div>
+            </div>
+          </section>
+          <div class="text-center p-3">
+            © 2023 Copyright:
+            <a class="text-white" href="mayaboxhn.com">mayaboxhn.com</a>
+          </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
