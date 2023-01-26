@@ -354,7 +354,7 @@ nav > .menu{
     font-weight: 400;
 }
 
-.slider-frame > div div{
+.slider-frame > div a{
     width: 80px;
     height: 80px;
     display: flex;
@@ -807,7 +807,7 @@ footer > div{
         text-align: center;
     }
     
-    .slider-frame > div div{
+    .slider-frame > div a{
         width: 80px;
         height: 80px;
         display: flex;
@@ -984,7 +984,3 @@ footer > div{
     }
 
 }
-
-
-
-
