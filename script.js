@@ -23,18 +23,18 @@ button.addEventListener("click", function(){
     menu.classList.toggle("active");
 })
 
-
+/*
 //go down button
 let down = document.querySelector(".slider-frame > div div");
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 5000; // For Safari
-    document.documentElement.scrollTop = 5000; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 900; // For Safari
+    document.documentElement.scrollTop = 900; // For Chrome, Firefox, IE and Opera
   }
   
   down.addEventListener("click",topFunction)
-
+*/
 //---------------------------------------Formularios-------------------------------------------------
 casillero = document.querySelector(".btn-casillero");
 formulario = document.querySelector(".casillero");
@@ -50,6 +50,9 @@ formulario = document.querySelector(".casillero");
 casillero_cerrar.addEventListener("click", function(){
     formulario.classList.remove("active");
 })
+
+
+
 
 
 
